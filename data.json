@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "ChristmasTree",
+      "price": 100,
+      "image": "images/ChristmasTree.jpeg",
+      "category": "Decor"
+    },
+    {
+      "id": 2,
+      "name": "JBL Speaker",
+      "price": 200,
+      "image": "images/JBL Speaker.jpeg",
+      "category": "Electrical"
+    },
+    {
+      "id": 3,
+      "name": "Mug",
+      "price": 50,
+      "image": "images/Mug.jpeg",
+      "category": "Life"
+    },
+    {
+      "id": 4,
+      "name": "SamsungTV",
+      "price": 1200,
+      "image": "images/SamsungTV.jpg",
+      "category": "Electrical"
+    }
+  ]
+}

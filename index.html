@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="script/style.css" rel="stylesheet" type="text/css">
+  <title>Shopping cart</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="script/renderUtil.js"></script>
+<body>
+  <h1>Shopping Cart</h1>
+  <p>Fill your form and select items you want to buy</p>
+<form method="post" action="summary.html" name="cartForm">
+  <h1>Cart form</h1>
+  <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
+  <section>
+    <h2>Contact information</h2>
+    <fieldset id="myFieldset">
+      <legend>Title</legend>
+      <ul>
+        <li>
+          <label for="title_1">
+            <input type="radio" id="title_1" name="title" class="title" value="mr">
+            Mr
+          </label>
+        </li>
+        <li>
+          <label for="title_2">
+            <input type="radio" id="title_2" name="title" class="title" value="mrs">
+            Mrs
+          </label>
+        </li>
+        <li>
+          <label for="title_3">
+            <input type="radio" id="title_3" name="title" class="title" value="dr">
+            Dr
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <p>
+      <label for="name">
+        <span>Name: </span>
+        <strong><span aria-label="required">*</span></strong>
+      </label>
+      <input type="text" id="name" name="name">
+      <span id="nameWarning" class="alert"></span>
+    </p>
+    <p>
+      <label for="mail">
+        <span>E-mail: </span>
+        <strong><span aria-label="required">*</span></strong>
+      </label>
+      <input type="email" id="email" name="email">
+      <span id="emailWarning" class="alert"></span>
+    </p>
+    <p>
+      <label for="address">
+        <span>Address: </span>
+        <strong><span aria-label="required">*</span></strong>
+      </label>
+      <input type="text" id="address" name="address">
+      <span id="addressWarning" class="alert"></span>
+    </p>
+    <p>
+      <label for="province">Province:</label>
+      <strong><span aria-label="required">*</span></strong>
+      <select id="province" name="province">
+        <option value="">Select Province</option>
+        <option value="AB">Alberta</option>
+        <option value="BC">British Columbia</option>
+        <option value="MB">Manitoba</option>
+        <option value="NB">New Brunswick</option>
+        <option value="NL">Newfoundland and Labrador</option>
+        <option value="NS">Nova Scotia</option>
+        <option value="ON">Ontario</option>
+        <option value="PE">Prince Edward Island</option>
+        <option value="QC">Quebec</option>
+        <option value="SK">Saskatchewan</option>
+        <option value="NT">Northwest Territories</option>
+        <option value="NU">Nunavut</option>
+        <option value="YT">Yukon</option>
+      </select>
+      <span id="provinceWarning" class="alert"></span>
+    </p>
+    <p>
+        <input type="checkbox" id="isGift" name="isGift" value="true">
+        <label for="isGift"> This is a gift</label><br>
+    </p>
+    <p>
+      Delivery Date:<input type="date" name="deliveryDate" id="deliveryDate">
+      <span id="dateWarning" class="alert"></span>
+    </p>
+    <p>
+      Total:<input readonly id="total" name="total">
+    </p>
+    </section>
+  </section>
+  <section>
+    <p> <button type="submit">Validate the payment</button> </p>
+    <p> <button type="reset">Reset</button> </p>
+  </section>
+  <section id="items">
+  
+  </section>
+</form>
+
+  <script src="script/validation.js"></script>
+  <script src="script/events.js"></script>
+  <script src="script/util.js"></script>
+</body>
+</html>

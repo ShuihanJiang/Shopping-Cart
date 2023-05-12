@@ -1,0 +1,31 @@
+.alert {
+  color: red;
+}
+
+img {
+  height: 100px;
+}
+
+.itemCard > * {
+  margin-left: 10px;
+}
+
+.itemCard > label {
+  display: inline-block;
+  width: 100px;
+}
+
+.itemCard > input {
+  margin-left:0;
+  margin-right:50px;
+  width: 50px;
+}
+
+.header > label {
+  display: inline-block;
+  width: 100px;
+}
+
+.header {
+  margin-left: 40px;
+}
